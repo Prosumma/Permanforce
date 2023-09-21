@@ -14,6 +14,12 @@
 		F359015F2ABBEC8000D1FFAF /* PermanforceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F359015E2ABBEC8000D1FFAF /* PermanforceTests.swift */; };
 		F35901692ABBEC8000D1FFAF /* PermanforceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35901682ABBEC8000D1FFAF /* PermanforceUITests.swift */; };
 		F359016B2ABBEC8000D1FFAF /* PermanforceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F359016A2ABBEC8000D1FFAF /* PermanforceUITestsLaunchTests.swift */; };
+		F35901782ABBEC9200D1FFAF /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35901772ABBEC9200D1FFAF /* Artist.swift */; };
+		F359017A2ABBECD500D1FFAF /* ParentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35901792ABBECD500D1FFAF /* ParentModel.swift */; };
+		F359017C2ABBED3B00D1FFAF /* Performance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F359017B2ABBED3B00D1FFAF /* Performance.swift */; };
+		F359017E2ABBEE4900D1FFAF /* DynamicCodingKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F359017D2ABBEE4900D1FFAF /* DynamicCodingKey.swift */; };
+		F35901802ABBF05900D1FFAF /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F359017F2ABBF05900D1FFAF /* Venue.swift */; };
+		F35901822ABBF09500D1FFAF /* Named.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35901812ABBF09500D1FFAF /* Named.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,12 @@
 		F35901642ABBEC8000D1FFAF /* PermanforceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PermanforceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F35901682ABBEC8000D1FFAF /* PermanforceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermanforceUITests.swift; sourceTree = "<group>"; };
 		F359016A2ABBEC8000D1FFAF /* PermanforceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermanforceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F35901772ABBEC9200D1FFAF /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		F35901792ABBECD500D1FFAF /* ParentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentModel.swift; sourceTree = "<group>"; };
+		F359017B2ABBED3B00D1FFAF /* Performance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Performance.swift; sourceTree = "<group>"; };
+		F359017D2ABBEE4900D1FFAF /* DynamicCodingKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicCodingKey.swift; sourceTree = "<group>"; };
+		F359017F2ABBF05900D1FFAF /* Venue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
+		F35901812ABBF09500D1FFAF /* Named.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Named.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +110,12 @@
 				F359014F2ABBEC7E00D1FFAF /* ContentView.swift */,
 				F35901512ABBEC8000D1FFAF /* Assets.xcassets */,
 				F35901532ABBEC8000D1FFAF /* Preview Content */,
+				F35901772ABBEC9200D1FFAF /* Artist.swift */,
+				F35901792ABBECD500D1FFAF /* ParentModel.swift */,
+				F359017B2ABBED3B00D1FFAF /* Performance.swift */,
+				F359017D2ABBEE4900D1FFAF /* DynamicCodingKey.swift */,
+				F359017F2ABBF05900D1FFAF /* Venue.swift */,
+				F35901812ABBF09500D1FFAF /* Named.swift */,
 			);
 			path = Permanforce;
 			sourceTree = "<group>";
@@ -257,7 +275,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F35901782ABBEC9200D1FFAF /* Artist.swift in Sources */,
+				F359017C2ABBED3B00D1FFAF /* Performance.swift in Sources */,
 				F35901502ABBEC7E00D1FFAF /* ContentView.swift in Sources */,
+				F35901822ABBF09500D1FFAF /* Named.swift in Sources */,
+				F35901802ABBF05900D1FFAF /* Venue.swift in Sources */,
+				F359017E2ABBEE4900D1FFAF /* DynamicCodingKey.swift in Sources */,
+				F359017A2ABBECD500D1FFAF /* ParentModel.swift in Sources */,
 				F359014E2ABBEC7E00D1FFAF /* PermanforceApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

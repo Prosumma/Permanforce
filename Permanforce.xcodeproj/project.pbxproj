@@ -93,6 +93,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F32614BA2ABCA76900279738 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F32614A22ABBFF8500279738 /* APIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F32614BB2ABCA77400279738 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F32614A42ABC032F00279738 /* AppViewModel.swift */,
+				F32614AE2ABC080E00279738 /* PerformancesViewModel.swift */,
+				F32614AC2ABC079400279738 /* RootViewModel.swift */,
+				F32614AA2ABC06B300279738 /* ViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F32614BC2ABCA78700279738 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				F32614B02ABC092200279738 /* AppAssembly.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		F32614BD2ABCA79900279738 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F32614B42ABC1EA300279738 /* ArtistsView.swift */,
+				F359014F2ABBEC7E00D1FFAF /* ContentView.swift */,
+				F326149D2ABBFA5000279738 /* NamedItem.swift */,
+				F326149F2ABBFEAC00279738 /* NamedItemList.swift */,
+				F32614B62ABC1F6600279738 /* VenuesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F32614BE2ABCA7D200279738 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F35901772ABBEC9200D1FFAF /* Artist.swift */,
+				F359017D2ABBEE4900D1FFAF /* DynamicCodingKey.swift */,
+				F35901812ABBF09500D1FFAF /* Named.swift */,
+				F359017B2ABBED3B00D1FFAF /* Performance.swift */,
+				F32614B22ABC137500279738 /* Root.swift */,
+				F359017F2ABBF05900D1FFAF /* Venue.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F32614BF2ABCA7FA00279738 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				F32614B82ABCA2AA00279738 /* DateFormatter.swift */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
 		F35901412ABBEC7E00D1FFAF = {
 			isa = PBXGroup;
 			children = (
@@ -115,28 +175,16 @@
 		F359014C2ABBEC7E00D1FFAF /* Permanforce */ = {
 			isa = PBXGroup;
 			children = (
+				F32614BC2ABCA78700279738 /* DI */,
+				F32614BF2ABCA7FA00279738 /* Environment */,
+				F32614BE2ABCA7D200279738 /* Models */,
+				F32614BD2ABCA79900279738 /* Views */,
+				F32614BB2ABCA77400279738 /* ViewModels */,
+				F32614BA2ABCA76900279738 /* Services */,
 				F32614A12ABBFF3700279738 /* Info.plist */,
 				F359014D2ABBEC7E00D1FFAF /* PermanforceApp.swift */,
-				F359014F2ABBEC7E00D1FFAF /* ContentView.swift */,
 				F35901512ABBEC8000D1FFAF /* Assets.xcassets */,
 				F35901532ABBEC8000D1FFAF /* Preview Content */,
-				F35901772ABBEC9200D1FFAF /* Artist.swift */,
-				F359017B2ABBED3B00D1FFAF /* Performance.swift */,
-				F359017D2ABBEE4900D1FFAF /* DynamicCodingKey.swift */,
-				F359017F2ABBF05900D1FFAF /* Venue.swift */,
-				F35901812ABBF09500D1FFAF /* Named.swift */,
-				F326149D2ABBFA5000279738 /* NamedItem.swift */,
-				F326149F2ABBFEAC00279738 /* NamedItemList.swift */,
-				F32614A22ABBFF8500279738 /* APIService.swift */,
-				F32614A42ABC032F00279738 /* AppViewModel.swift */,
-				F32614AA2ABC06B300279738 /* ViewModel.swift */,
-				F32614AC2ABC079400279738 /* RootViewModel.swift */,
-				F32614AE2ABC080E00279738 /* PerformancesViewModel.swift */,
-				F32614B02ABC092200279738 /* AppAssembly.swift */,
-				F32614B22ABC137500279738 /* Root.swift */,
-				F32614B42ABC1EA300279738 /* ArtistsView.swift */,
-				F32614B62ABC1F6600279738 /* VenuesView.swift */,
-				F32614B82ABCA2AA00279738 /* DateFormatter.swift */,
 			);
 			path = Permanforce;
 			sourceTree = "<group>";

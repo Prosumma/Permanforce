@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-class RootViewModel<Model: Named & Identifiable & Codable>: ViewModel<Model> {
+class RootViewModel<Model: Root>: ViewModel<Model> {
   override func get() async throws {
     models = try await service.get()
   }

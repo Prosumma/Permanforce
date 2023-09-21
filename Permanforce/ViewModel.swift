@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+@MainActor
 class ViewModel<Model>: ObservableObject {
   let service: APIService
   @Published var models: [Model] = []

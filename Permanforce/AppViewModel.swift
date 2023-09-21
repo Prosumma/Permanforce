@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+@MainActor
 class AppViewModel: ObservableObject {
   private let service: APIService
   

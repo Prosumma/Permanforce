@@ -8,17 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+  @EnvironmentObject private var appViewModel: AppViewModel
+  
+  var body: some View {
+    NavigationView {
+      NamedItemList(viewModel: appViewModel.rootViewModel(for: Artist.self)) { artist in
+        Text(artist.genre).italic()
+      } destination: { artist, viewModel in
+        NamedItemList(viewModel: viewModel.performancesViewModel(for: artist))
+      }
     }
-}
-
-#Preview {
-    ContentView()
+  }
 }

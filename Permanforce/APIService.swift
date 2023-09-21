@@ -10,7 +10,7 @@ import HTTPFluent
 
 protocol APIService {
   func get<Model: Named & Codable>() async throws -> [Model]
-  func getPerformances<Model: Named & Identifiable & Codable>(for model: Model) async throws -> [Performance<Model>]
+  func getPerformances<Model: Root>(for model: Model) async throws -> [Performance<Model.Alternate>]
 }
 
 class ConcreteAPIService: APIService {
@@ -31,9 +31,9 @@ class ConcreteAPIService: APIService {
       .receive(decoding: [Model].self, decoder: decoder)
   }
   
-  func getPerformances<Model: Named & Identifiable & Codable>(for model: Model) async throws -> [Performance<Model>] {
+  func getPerformances<Model: Root>(for model: Model) async throws -> [Performance<Model.Alternate>] {
     try await client
       .path(Model.entityPath, model.id, "performances")
-      .receive(decoding: [Performance<Model>].self, decoder: decoder)
+      .receive(decoding: [Performance<Model.Alternate>].self, decoder: decoder)
   }
 }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Performance<Parent: Named & Codable> {
+struct Performance<Parent: Root & Codable>: Identifiable {
   let id: Int
   let date: Date
   let parent: Parent

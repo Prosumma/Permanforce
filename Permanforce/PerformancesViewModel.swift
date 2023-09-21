@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-class PerformancesViewModel<Model: Named & Identifiable & Codable>: ViewModel<Performance<Model>> {
+class PerformancesViewModel<Model: Root & Identifiable & Codable>: ViewModel<Performance<Model.Alternate>> {
   let model: Model
   
   init(model: Model, service: APIService) {

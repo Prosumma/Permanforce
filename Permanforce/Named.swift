@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol Named {
+protocol Named: Codable, Identifiable {
   static var entityName: String { get }
   var name: String { get }
   var imageUrl: URL? { get }
@@ -16,10 +16,6 @@ protocol Named {
 extension Named {
   static var entityPath: String {
     entityName + "s"
-  }
-  
-  static var codingKey: DynamicCodingKey {
-    .init(stringValue: entityName)!
   }
   
   var imageUrl: URL? {

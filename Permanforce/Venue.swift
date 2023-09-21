@@ -7,12 +7,13 @@
 
 import Foundation
 
-struct Venue: Codable, Named {
+struct Venue: Codable, Identifiable {
   let id: Int
   let name: String
   let sortId: Int
 }
 
-extension Venue: ParentModel {
+extension Venue: Root {
+  typealias Alternate = Artist
   static let entityName: String = "venue"
 }

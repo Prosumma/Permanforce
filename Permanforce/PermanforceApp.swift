@@ -5,13 +5,23 @@
 //  Created by Greg Higley on 2023-09-20.
 //
 
+import Guise
 import SwiftUI
 
 @main
 struct PermanforceApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+  let container = Container()
+  let service: APIService
+
+  init() {
+    container.assemble(AppAssembly())
+    service = try! container.resolve()
+  }
+
+  var body: some Scene {
+    WindowGroup {
+      ContentView()
+        .environmentObject(AppViewModel(service: service))
     }
+  }
 }

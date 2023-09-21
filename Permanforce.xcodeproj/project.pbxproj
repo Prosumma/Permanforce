@@ -20,6 +20,9 @@
 		F359017E2ABBEE4900D1FFAF /* DynamicCodingKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F359017D2ABBEE4900D1FFAF /* DynamicCodingKey.swift */; };
 		F35901802ABBF05900D1FFAF /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F359017F2ABBF05900D1FFAF /* Venue.swift */; };
 		F35901822ABBF09500D1FFAF /* Named.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35901812ABBF09500D1FFAF /* Named.swift */; };
+		F35901852ABBF16100D1FFAF /* HTTPFluent in Frameworks */ = {isa = PBXBuildFile; productRef = F35901842ABBF16100D1FFAF /* HTTPFluent */; };
+		F35901882ABBF17000D1FFAF /* Guise in Frameworks */ = {isa = PBXBuildFile; productRef = F35901872ABBF17000D1FFAF /* Guise */; };
+		F35901942ABBF35200D1FFAF /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = F35901932ABBF35200D1FFAF /* Nimble */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F35901882ABBF17000D1FFAF /* Guise in Frameworks */,
+				F35901852ABBF16100D1FFAF /* HTTPFluent in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F35901942ABBF35200D1FFAF /* Nimble in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +96,7 @@
 				F359015D2ABBEC8000D1FFAF /* PermanforceTests */,
 				F35901672ABBEC8000D1FFAF /* PermanforceUITests */,
 				F359014B2ABBEC7E00D1FFAF /* Products */,
+				F35901922ABBF35200D1FFAF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,6 +152,13 @@
 			path = PermanforceUITests;
 			sourceTree = "<group>";
 		};
+		F35901922ABBF35200D1FFAF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -161,6 +175,10 @@
 			dependencies = (
 			);
 			name = Permanforce;
+			packageProductDependencies = (
+				F35901842ABBF16100D1FFAF /* HTTPFluent */,
+				F35901872ABBF17000D1FFAF /* Guise */,
+			);
 			productName = Permanforce;
 			productReference = F359014A2ABBEC7E00D1FFAF /* Permanforce.app */;
 			productType = "com.apple.product-type.application";
@@ -179,6 +197,9 @@
 				F359015C2ABBEC8000D1FFAF /* PBXTargetDependency */,
 			);
 			name = PermanforceTests;
+			packageProductDependencies = (
+				F35901932ABBF35200D1FFAF /* Nimble */,
+			);
 			productName = PermanforceTests;
 			productReference = F359015A2ABBEC8000D1FFAF /* PermanforceTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -233,6 +254,11 @@
 				Base,
 			);
 			mainGroup = F35901412ABBEC7E00D1FFAF;
+			packageReferences = (
+				F35901832ABBF16100D1FFAF /* XCRemoteSwiftPackageReference "HTTPFluent" */,
+				F35901862ABBF17000D1FFAF /* XCRemoteSwiftPackageReference "Guise" */,
+				F359018F2ABBF34100D1FFAF /* XCRemoteSwiftPackageReference "nimble" */,
+			);
 			productRefGroup = F359014B2ABBEC7E00D1FFAF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -606,6 +632,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F35901832ABBF16100D1FFAF /* XCRemoteSwiftPackageReference "HTTPFluent" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/prosumma/HTTPFluent";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.1;
+			};
+		};
+		F35901862ABBF17000D1FFAF /* XCRemoteSwiftPackageReference "Guise" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/prosumma/Guise";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.1.2;
+			};
+		};
+		F359018F2ABBF34100D1FFAF /* XCRemoteSwiftPackageReference "nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/quick/nimble";
+			requirement = {
+				kind = exactVersion;
+				version = 12.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F35901842ABBF16100D1FFAF /* HTTPFluent */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F35901832ABBF16100D1FFAF /* XCRemoteSwiftPackageReference "HTTPFluent" */;
+			productName = HTTPFluent;
+		};
+		F35901872ABBF17000D1FFAF /* Guise */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F35901862ABBF17000D1FFAF /* XCRemoteSwiftPackageReference "Guise" */;
+			productName = Guise;
+		};
+		F35901932ABBF35200D1FFAF /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F359018F2ABBF34100D1FFAF /* XCRemoteSwiftPackageReference "nimble" */;
+			productName = Nimble;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F35901422ABBEC7E00D1FFAF /* Project object */;
 }

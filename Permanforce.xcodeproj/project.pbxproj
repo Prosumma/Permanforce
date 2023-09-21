@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F326149E2ABBFA5000279738 /* NamedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F326149D2ABBFA5000279738 /* NamedItem.swift */; };
+		F32614A02ABBFEAC00279738 /* NamedItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F326149F2ABBFEAC00279738 /* NamedItemList.swift */; };
 		F359014E2ABBEC7E00D1FFAF /* PermanforceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F359014D2ABBEC7E00D1FFAF /* PermanforceApp.swift */; };
 		F35901502ABBEC7E00D1FFAF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F359014F2ABBEC7E00D1FFAF /* ContentView.swift */; };
 		F35901522ABBEC8000D1FFAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F35901512ABBEC8000D1FFAF /* Assets.xcassets */; };
 		F35901552ABBEC8000D1FFAF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F35901542ABBEC8000D1FFAF /* Preview Assets.xcassets */; };
-		F359015F2ABBEC8000D1FFAF /* PermanforceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F359015E2ABBEC8000D1FFAF /* PermanforceTests.swift */; };
 		F35901782ABBEC9200D1FFAF /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35901772ABBEC9200D1FFAF /* Artist.swift */; };
 		F359017A2ABBECD500D1FFAF /* ParentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35901792ABBECD500D1FFAF /* ParentModel.swift */; };
 		F359017C2ABBED3B00D1FFAF /* Performance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F359017B2ABBED3B00D1FFAF /* Performance.swift */; };
@@ -35,13 +36,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F326149D2ABBFA5000279738 /* NamedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamedItem.swift; sourceTree = "<group>"; };
+		F326149F2ABBFEAC00279738 /* NamedItemList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamedItemList.swift; sourceTree = "<group>"; };
 		F359014A2ABBEC7E00D1FFAF /* Permanforce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Permanforce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F359014D2ABBEC7E00D1FFAF /* PermanforceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermanforceApp.swift; sourceTree = "<group>"; };
 		F359014F2ABBEC7E00D1FFAF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F35901512ABBEC8000D1FFAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F35901542ABBEC8000D1FFAF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F359015A2ABBEC8000D1FFAF /* PermanforceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PermanforceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F359015E2ABBEC8000D1FFAF /* PermanforceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermanforceTests.swift; sourceTree = "<group>"; };
 		F35901772ABBEC9200D1FFAF /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		F35901792ABBECD500D1FFAF /* ParentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentModel.swift; sourceTree = "<group>"; };
 		F359017B2ABBED3B00D1FFAF /* Performance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Performance.swift; sourceTree = "<group>"; };
@@ -104,6 +106,8 @@
 				F359017D2ABBEE4900D1FFAF /* DynamicCodingKey.swift */,
 				F359017F2ABBF05900D1FFAF /* Venue.swift */,
 				F35901812ABBF09500D1FFAF /* Named.swift */,
+				F326149D2ABBFA5000279738 /* NamedItem.swift */,
+				F326149F2ABBFEAC00279738 /* NamedItemList.swift */,
 			);
 			path = Permanforce;
 			sourceTree = "<group>";
@@ -119,7 +123,6 @@
 		F359015D2ABBEC8000D1FFAF /* PermanforceTests */ = {
 			isa = PBXGroup;
 			children = (
-				F359015E2ABBEC8000D1FFAF /* PermanforceTests.swift */,
 				F35901952ABBF3E100D1FFAF /* PerformanceCodableTests.swift */,
 			);
 			path = PermanforceTests;
@@ -244,12 +247,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F32614A02ABBFEAC00279738 /* NamedItemList.swift in Sources */,
 				F35901782ABBEC9200D1FFAF /* Artist.swift in Sources */,
 				F359017C2ABBED3B00D1FFAF /* Performance.swift in Sources */,
 				F35901502ABBEC7E00D1FFAF /* ContentView.swift in Sources */,
 				F35901822ABBF09500D1FFAF /* Named.swift in Sources */,
 				F35901802ABBF05900D1FFAF /* Venue.swift in Sources */,
 				F359017E2ABBEE4900D1FFAF /* DynamicCodingKey.swift in Sources */,
+				F326149E2ABBFA5000279738 /* NamedItem.swift in Sources */,
 				F359017A2ABBECD500D1FFAF /* ParentModel.swift in Sources */,
 				F359014E2ABBEC7E00D1FFAF /* PermanforceApp.swift in Sources */,
 			);
@@ -259,7 +264,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F359015F2ABBEC8000D1FFAF /* PermanforceTests.swift in Sources */,
 				F35901962ABBF3E100D1FFAF /* PerformanceCodableTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

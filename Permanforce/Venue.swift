@@ -10,6 +10,7 @@ import Foundation
 struct Venue: Codable, Named {
   let id: Int
   let name: String
+  let sortId: Int
 }
 
 extension Venue: ParentModel {

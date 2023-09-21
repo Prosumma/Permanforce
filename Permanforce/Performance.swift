@@ -17,6 +17,9 @@ extension Performance: Named {
   var name: String {
     parent.name
   }
+  var imageUrl: URL? {
+    parent.imageUrl
+  }
 }
 
 extension Performance: Codable {

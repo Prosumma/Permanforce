@@ -26,7 +26,10 @@ struct NamedItem<Model: Named, Detail: View>: View {
         case .empty:
           ProgressView()
         default:
-          Color.red
+          ZStack {
+            Color.red
+            Text("ERROR")
+          }
         }
       }
       .clipShape(Circle())

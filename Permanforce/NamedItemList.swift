@@ -12,15 +12,16 @@ struct NamedItemList<Model, VM: ViewModel<Model>, Detail: View, Destination: Vie
   where Model: Named & Identifiable & Codable
 {
   @ObservedObject private var viewModel: VM
+
   private let detail: (Model) -> Detail
   private let destination: ((Model, VM) -> Destination)?
-  
+
   init(viewModel: VM, @ViewBuilder detail: @escaping (Model) -> Detail, @ViewBuilder destination: @escaping (Model, VM) -> Destination) {
     self.viewModel = viewModel
     self.detail = detail
     self.destination = destination
   }
-  
+
   var body: some View {
     List {
       ForEach(viewModel.models) { model in
@@ -51,6 +52,14 @@ extension NamedItemList where Destination == Never {
     self.viewModel = viewModel
     self.detail = detail
     self.destination = nil
+  }
+}
+
+extension NamedItemList where Detail == EmptyView {
+  init(viewModel: VM, @ViewBuilder destination: @escaping (Model, VM) -> Destination) {
+    self.viewModel = viewModel
+    self.detail = { _ in EmptyView() }
+    self.destination = destination
   }
 }
 

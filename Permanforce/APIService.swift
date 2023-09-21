@@ -17,8 +17,11 @@ class ConcreteAPIService: APIService {
   private let decoder: JSONDecoder
   // In a real application, we wouldn't hard-code this.
   private let client = URLClient(url: "http://ec2-44-211-66-223.compute-1.amazonaws.com")
+  private let dayFormatter = DateFormatter()
+  private let calendar = Calendar(identifier: .gregorian)
 
   init() {
+    dayFormatter.dateFormat = "yyyy-MM-dd"
     let dateFormatter = DateFormatter()
     dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
     decoder = JSONDecoder()
@@ -32,8 +35,14 @@ class ConcreteAPIService: APIService {
   }
   
   func getPerformances<Model: Root>(for model: Model) async throws -> [Performance<Model.Alternate>] {
-    try await client
+    let start = Date()
+    let from = dayFormatter.string(from: start)
+    let end = calendar.date(byAdding: .day, value: 14, to: start)!
+    let to = dayFormatter.string(from: end)
+    return try await client
       .path(Model.entityPath, model.id, "performances")
+      .query(from, forName: "from")
+      .query(to, forName: "to")
       .receive(decoding: [Performance<Model.Alternate>].self, decoder: decoder)
   }
 }

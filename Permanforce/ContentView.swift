@@ -18,20 +18,30 @@ struct ContentView: View {
   
   var body: some View {
     NavigationView {
-      NamedItemList(viewModel: appViewModel.rootViewModel(for: Venue.self)) { venue, viewModel in
-        NamedItemList(viewModel: viewModel.performancesViewModel(for: venue)) { performance in
-          Text(dateFormatter.string(from: performance.date))
-        }.navigationTitle(venue.name)
-      }.navigationTitle("Venues")
-      /*
-      NamedItemList(viewModel: appViewModel.rootViewModel(for: Artist.self)) { artist in
-        Text(artist.genre).italic()
-      } destination: { artist, viewModel in
-        NamedItemList(viewModel: viewModel.performancesViewModel(for: artist)) { performance in
-          Text(dateFormatter.string(from: performance.date))
-        }
+      VStack {
+        NavigationLink {
+          ArtistView().navigationTitle("Artists")
+        } label: {
+          RootSelector(label: "Artists")
+        }.frame(maxHeight: .infinity)
+        NavigationLink {
+          VenueView().navigationTitle("Venues")
+        } label: {
+          RootSelector(label: "Venues")
+        }.frame(maxHeight: .infinity)
       }
-      */
     }
+  }
+}
+
+private struct RootSelector: View {
+  private let label: String
+  
+  init(label: String) {
+    self.label = label
+  }
+  
+  var body: some View {
+    Text(label).font(.largeTitle)
   }
 }

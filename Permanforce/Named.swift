@@ -8,11 +8,20 @@
 import Foundation
 
 protocol Named {
+  static var entityName: String { get }
   var name: String { get }
   var imageUrl: URL? { get }
 }
 
-extension Named where Self: ParentModel {
+extension Named {
+  static var entityPath: String {
+    entityName + "s"
+  }
+  
+  static var codingKey: DynamicCodingKey {
+    .init(stringValue: entityName)!
+  }
+  
   var imageUrl: URL? {
     name
       .addingPercentEncoding(withAllowedCharacters: .urlPathAllowed)

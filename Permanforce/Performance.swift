@@ -7,16 +7,21 @@
 
 import Foundation
 
-struct Performance<Parent: ParentModel & Codable & Named> {
+struct Performance<Parent: Named & Codable> {
   let id: Int
   let date: Date
   let parent: Parent
 }
 
 extension Performance: Named {
+  static var entityName: String {
+    Parent.entityName
+  }
+  
   var name: String {
     parent.name
   }
+
   var imageUrl: URL? {
     parent.imageUrl
   }

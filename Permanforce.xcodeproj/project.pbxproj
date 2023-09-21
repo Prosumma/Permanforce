@@ -12,8 +12,6 @@
 		F35901522ABBEC8000D1FFAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F35901512ABBEC8000D1FFAF /* Assets.xcassets */; };
 		F35901552ABBEC8000D1FFAF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F35901542ABBEC8000D1FFAF /* Preview Assets.xcassets */; };
 		F359015F2ABBEC8000D1FFAF /* PermanforceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F359015E2ABBEC8000D1FFAF /* PermanforceTests.swift */; };
-		F35901692ABBEC8000D1FFAF /* PermanforceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35901682ABBEC8000D1FFAF /* PermanforceUITests.swift */; };
-		F359016B2ABBEC8000D1FFAF /* PermanforceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F359016A2ABBEC8000D1FFAF /* PermanforceUITestsLaunchTests.swift */; };
 		F35901782ABBEC9200D1FFAF /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35901772ABBEC9200D1FFAF /* Artist.swift */; };
 		F359017A2ABBECD500D1FFAF /* ParentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35901792ABBECD500D1FFAF /* ParentModel.swift */; };
 		F359017C2ABBED3B00D1FFAF /* Performance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F359017B2ABBED3B00D1FFAF /* Performance.swift */; };
@@ -23,17 +21,11 @@
 		F35901852ABBF16100D1FFAF /* HTTPFluent in Frameworks */ = {isa = PBXBuildFile; productRef = F35901842ABBF16100D1FFAF /* HTTPFluent */; };
 		F35901882ABBF17000D1FFAF /* Guise in Frameworks */ = {isa = PBXBuildFile; productRef = F35901872ABBF17000D1FFAF /* Guise */; };
 		F35901942ABBF35200D1FFAF /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = F35901932ABBF35200D1FFAF /* Nimble */; };
+		F35901962ABBF3E100D1FFAF /* PerformanceCodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35901952ABBF3E100D1FFAF /* PerformanceCodableTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		F359015B2ABBEC8000D1FFAF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F35901422ABBEC7E00D1FFAF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F35901492ABBEC7E00D1FFAF;
-			remoteInfo = Permanforce;
-		};
-		F35901652ABBEC8000D1FFAF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F35901422ABBEC7E00D1FFAF /* Project object */;
 			proxyType = 1;
@@ -50,15 +42,13 @@
 		F35901542ABBEC8000D1FFAF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F359015A2ABBEC8000D1FFAF /* PermanforceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PermanforceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F359015E2ABBEC8000D1FFAF /* PermanforceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermanforceTests.swift; sourceTree = "<group>"; };
-		F35901642ABBEC8000D1FFAF /* PermanforceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PermanforceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F35901682ABBEC8000D1FFAF /* PermanforceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermanforceUITests.swift; sourceTree = "<group>"; };
-		F359016A2ABBEC8000D1FFAF /* PermanforceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermanforceUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F35901772ABBEC9200D1FFAF /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		F35901792ABBECD500D1FFAF /* ParentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentModel.swift; sourceTree = "<group>"; };
 		F359017B2ABBED3B00D1FFAF /* Performance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Performance.swift; sourceTree = "<group>"; };
 		F359017D2ABBEE4900D1FFAF /* DynamicCodingKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicCodingKey.swift; sourceTree = "<group>"; };
 		F359017F2ABBF05900D1FFAF /* Venue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
 		F35901812ABBF09500D1FFAF /* Named.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Named.swift; sourceTree = "<group>"; };
+		F35901952ABBF3E100D1FFAF /* PerformanceCodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceCodableTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,13 +69,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F35901612ABBEC8000D1FFAF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -94,7 +77,6 @@
 			children = (
 				F359014C2ABBEC7E00D1FFAF /* Permanforce */,
 				F359015D2ABBEC8000D1FFAF /* PermanforceTests */,
-				F35901672ABBEC8000D1FFAF /* PermanforceUITests */,
 				F359014B2ABBEC7E00D1FFAF /* Products */,
 				F35901922ABBF35200D1FFAF /* Frameworks */,
 			);
@@ -105,7 +87,6 @@
 			children = (
 				F359014A2ABBEC7E00D1FFAF /* Permanforce.app */,
 				F359015A2ABBEC8000D1FFAF /* PermanforceTests.xctest */,
-				F35901642ABBEC8000D1FFAF /* PermanforceUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,17 +120,9 @@
 			isa = PBXGroup;
 			children = (
 				F359015E2ABBEC8000D1FFAF /* PermanforceTests.swift */,
+				F35901952ABBF3E100D1FFAF /* PerformanceCodableTests.swift */,
 			);
 			path = PermanforceTests;
-			sourceTree = "<group>";
-		};
-		F35901672ABBEC8000D1FFAF /* PermanforceUITests */ = {
-			isa = PBXGroup;
-			children = (
-				F35901682ABBEC8000D1FFAF /* PermanforceUITests.swift */,
-				F359016A2ABBEC8000D1FFAF /* PermanforceUITestsLaunchTests.swift */,
-			);
-			path = PermanforceUITests;
 			sourceTree = "<group>";
 		};
 		F35901922ABBF35200D1FFAF /* Frameworks */ = {
@@ -204,24 +177,6 @@
 			productReference = F359015A2ABBEC8000D1FFAF /* PermanforceTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F35901632ABBEC8000D1FFAF /* PermanforceUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F35901742ABBEC8000D1FFAF /* Build configuration list for PBXNativeTarget "PermanforceUITests" */;
-			buildPhases = (
-				F35901602ABBEC8000D1FFAF /* Sources */,
-				F35901612ABBEC8000D1FFAF /* Frameworks */,
-				F35901622ABBEC8000D1FFAF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F35901662ABBEC8000D1FFAF /* PBXTargetDependency */,
-			);
-			name = PermanforceUITests;
-			productName = PermanforceUITests;
-			productReference = F35901642ABBEC8000D1FFAF /* PermanforceUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -236,10 +191,6 @@
 						CreatedOnToolsVersion = 15.0;
 					};
 					F35901592ABBEC8000D1FFAF = {
-						CreatedOnToolsVersion = 15.0;
-						TestTargetID = F35901492ABBEC7E00D1FFAF;
-					};
-					F35901632ABBEC8000D1FFAF = {
 						CreatedOnToolsVersion = 15.0;
 						TestTargetID = F35901492ABBEC7E00D1FFAF;
 					};
@@ -265,7 +216,6 @@
 			targets = (
 				F35901492ABBEC7E00D1FFAF /* Permanforce */,
 				F35901592ABBEC8000D1FFAF /* PermanforceTests */,
-				F35901632ABBEC8000D1FFAF /* PermanforceUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -281,13 +231,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F35901582ABBEC8000D1FFAF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F35901622ABBEC8000D1FFAF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -317,15 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F359015F2ABBEC8000D1FFAF /* PermanforceTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F35901602ABBEC8000D1FFAF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F35901692ABBEC8000D1FFAF /* PermanforceUITests.swift in Sources */,
-				F359016B2ABBEC8000D1FFAF /* PermanforceUITestsLaunchTests.swift in Sources */,
+				F35901962ABBF3E100D1FFAF /* PerformanceCodableTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,11 +271,6 @@
 			isa = PBXTargetDependency;
 			target = F35901492ABBEC7E00D1FFAF /* Permanforce */;
 			targetProxy = F359015B2ABBEC8000D1FFAF /* PBXContainerItemProxy */;
-		};
-		F35901662ABBEC8000D1FFAF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F35901492ABBEC7E00D1FFAF /* Permanforce */;
-			targetProxy = F35901652ABBEC8000D1FFAF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -558,40 +488,6 @@
 			};
 			name = Release;
 		};
-		F35901752ABBEC8000D1FFAF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.prosumma.PermanforceUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Permanforce;
-			};
-			name = Debug;
-		};
-		F35901762ABBEC8000D1FFAF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.prosumma.PermanforceUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Permanforce;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -618,15 +514,6 @@
 			buildConfigurations = (
 				F35901722ABBEC8000D1FFAF /* Debug */,
 				F35901732ABBEC8000D1FFAF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F35901742ABBEC8000D1FFAF /* Build configuration list for PBXNativeTarget "PermanforceUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F35901752ABBEC8000D1FFAF /* Debug */,
-				F35901762ABBEC8000D1FFAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

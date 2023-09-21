@@ -17,6 +17,6 @@ class PerformancesViewModel<Model: Root>: ViewModel<Performance<Model.Alternate>
   }
   
   override func get() async throws {
-    models = try await service.getPerformances(for: model)
+    models = try await service.getPerformances(for: model).sorted(by: <)
   }
 }

@@ -7,13 +7,21 @@
 
 import Foundation
 
-protocol Named: Codable, Identifiable {
+protocol Named: Codable, Identifiable, Equatable, Comparable {
   static var entityName: String { get }
   var name: String { get }
   var imageUrl: URL? { get }
 }
 
 extension Named {
+  static func == (lhs: Self, rhs: Self) -> Bool {
+    lhs.id == rhs.id
+  }
+
+  static func < (lhs: Self, rhs: Self) -> Bool {
+    lhs.name < rhs.name
+  }
+  
   static var entityPath: String {
     entityName + "s"
   }
@@ -27,3 +35,4 @@ extension Named {
       .flatMap(URL.init)
   }
 }
+

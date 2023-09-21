@@ -10,7 +10,7 @@ import SwiftUI
 
 class RootViewModel<Model: Root>: ViewModel<Model> {
   override func get() async throws {
-    models = try await service.get()
+    models = try await service.get().sorted(by: <)
   }
   
   func performancesViewModel(for model: Model) -> PerformancesViewModel<Model> {

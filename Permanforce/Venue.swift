@@ -13,6 +13,12 @@ struct Venue: Codable, Identifiable {
   let sortId: Int
 }
 
+extension Venue {
+  static func < (lhs: Venue, rhs: Venue) -> Bool {
+    lhs.sortId < rhs.sortId
+  }
+}
+
 extension Venue: Root {
   typealias Alternate = Artist
   static let entityName: String = "venue"

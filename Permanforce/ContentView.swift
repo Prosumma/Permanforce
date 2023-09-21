@@ -20,12 +20,12 @@ struct ContentView: View {
     NavigationView {
       VStack {
         NavigationLink {
-          ArtistView().navigationTitle("Artists")
+          ArtistsView().navigationTitle("Artists")
         } label: {
           RootSelector(label: "Artists")
         }.frame(maxHeight: .infinity)
         NavigationLink {
-          VenueView().navigationTitle("Venues")
+          VenuesView().navigationTitle("Venues")
         } label: {
           RootSelector(label: "Venues")
         }.frame(maxHeight: .infinity)

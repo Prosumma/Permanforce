@@ -14,6 +14,10 @@ struct Performance<Parent: Root & Codable>: Identifiable {
 }
 
 extension Performance: Named {
+  static func < (lhs: Self, rhs: Self) -> Bool {
+    lhs.date < rhs.date
+  }
+  
   static var entityName: String {
     Parent.entityName
   }

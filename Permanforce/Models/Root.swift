@@ -9,7 +9,6 @@ import Foundation
 
 protocol Root: Named {
   associatedtype Alternate: Root
-  static var codingKey: DynamicCodingKey { get }
 }
 
 extension Root {

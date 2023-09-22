@@ -13,7 +13,7 @@ struct Venue: Codable, Identifiable {
   let sortId: Int
 }
 
-extension Venue {
+extension Venue: Comparable {
   static func < (lhs: Venue, rhs: Venue) -> Bool {
     lhs.sortId < rhs.sortId
   }

@@ -8,15 +8,17 @@
 import Foundation
 import SwiftUI
 
-struct NamedItemList<Model, VM: ViewModel<Model>, Detail: View, Destination: View>: View
-  where Model: Named & Identifiable & Codable
-{
+struct NamedItemList<Model: Named, VM: ViewModel<Model>, Detail: View, Destination: View>: View {
   @ObservedObject private var viewModel: VM
 
   private let detail: (Model) -> Detail
   private let destination: ((Model, VM) -> Destination)?
 
-  init(viewModel: VM, @ViewBuilder detail: @escaping (Model) -> Detail, @ViewBuilder destination: @escaping (Model, VM) -> Destination) {
+  init(
+    viewModel: VM,
+    @ViewBuilder detail: @escaping (Model) -> Detail,
+    @ViewBuilder destination: @escaping (Model, VM) -> Destination
+  ) {
     self.viewModel = viewModel
     self.detail = detail
     self.destination = destination
@@ -25,14 +27,15 @@ struct NamedItemList<Model, VM: ViewModel<Model>, Detail: View, Destination: Vie
   var body: some View {
     List {
       ForEach(viewModel.models) { model in
+        let item = NamedItem(model: model, detail: detail)
         if let destination {
           NavigationLink {
             destination(model, viewModel)
           } label: {
-            NamedItem(model: model, detail: detail)
+            item
           }
         } else {
-          NamedItem(model: model, detail: detail)
+          item
         }
       }
     }

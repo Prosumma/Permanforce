@@ -13,11 +13,13 @@ struct Performance<Parent: Root & Codable>: Identifiable {
   let parent: Parent
 }
 
-extension Performance: Named {
+extension Performance: Comparable {
   static func < (lhs: Self, rhs: Self) -> Bool {
     lhs.date < rhs.date
   }
-  
+}
+
+extension Performance: Named {
   static var entityName: String {
     Parent.entityName
   }
@@ -38,7 +40,7 @@ extension Performance: Codable {
     date = try container.decode(Date.self, forKey: .date)
     parent = try container.decode(Parent.self, forKey: Parent.codingKey)
   }
-  
+
   func encode(to encoder: Encoder) throws {
     var container = encoder.container(keyedBy: DynamicCodingKey.self)
     try container.encode(id, forKey: .id)

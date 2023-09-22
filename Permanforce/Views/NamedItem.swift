@@ -12,7 +12,10 @@ struct NamedItem<Model: Named, Detail: View>: View {
   let model: Model
   private let detail: (Model) -> Detail
 
-  init(model: Model, @ViewBuilder detail: @escaping (Model) -> Detail) {
+  init(
+    model: Model,
+    @ViewBuilder detail: @escaping (Model) -> Detail
+  ) {
     self.model = model
     self.detail = detail
   }
